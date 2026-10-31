@@ -1,0 +1,32 @@
+{
+  "name": "focusguard-vscode",
+  "displayName": "FocusGuard AI for VS Code",
+  "description": "Desktop study session tracking and attention status in your editor status bar",
+  "version": "1.0.0",
+  "publisher": "focusguard",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Productivity"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "focusguard.startSession",
+        "title": "FocusGuard: Start Study Session"
+      },
+      {
+        "command": "focusguard.pauseSession",
+        "title": "FocusGuard: Pause Session"
+      },
+      {
+        "command": "focusguard.resumeSession",
+        "title": "FocusGuard: Resume Session"
+      },
+      {
+        "command": "focusguard.openDashboard",
+        "title": "FocusGuard: Open Dashboard"
+      }
+    ]
+  }
+}
