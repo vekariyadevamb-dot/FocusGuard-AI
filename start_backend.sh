@@ -6,9 +6,9 @@ cd "$SCRIPT_DIR"
 
 if [ ! -d ".venv" ]; then
     echo "Creating virtual environment..."
-    uv venv --python /home/dev/.local/share/uv/python/cpython-3.12-linux-x86_64-gnu/bin/python3.12 .venv
+    python3 -m venv .venv
     source .venv/bin/activate
-    uv pip install "mediapipe<1.0" opencv-python numpy fastapi uvicorn websockets pydantic aiosqlite pytest pytest-asyncio httpx
+    pip install -r requirements.txt
 fi
 
 source .venv/bin/activate
